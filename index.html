@@ -1,38 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Vlad Inc. | Официальный сайт</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlad Inc. | OFFICIAL</title>
     <style>
-        body { font-family: Arial; text-align: center; }
-        .button { 
-            background: #1E90FF; 
-            color: white; 
-            padding: 15px; 
-            border-radius: 5px;
-            text-decoration: none;
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+        }
+        
+        header {
+            background-color: #1E90FF; /* Синий */
+            padding: 20px 0;
+            color: white;
+        }
+        
+        .logo {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Кнопки */
+        .btn {
             display: inline-block;
+            padding: 12px 30px;
+            margin: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .primary-btn {
+            background-color: #FF8C00; /* Оранжевый */
+            color: white;
+            border: 2px solid #FF8C00;
+        }
+        
+        .primary-btn:hover {
+            background-color: #e67e00;
+        }
+        
+        /* Секции */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        
+        .service-card {
+            width: 200px;
+            padding: 20px;
             margin: 10px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background-color: #1E90FF;
+            color: white;
+            padding: 20px 0;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <img src="vlad-inc-logo.png" alt="Vlad Inc." width="1000">
-    <h1>Добро пожаловать в Vlad Inc.!</h1>
+    <!-- Шапка сайта -->
+    <header>
+        <img src="vlad-inc-logo.png" alt="Vlad Inc." class="logo">
+        <h1>Vlad Inc.</h1>
+        <p>Libri | Posta | Web</p>
+    </header>
     
-    <!-- Кнопки-ссылки на сервисы -->
-    <a href="#books" class="button">📚 Книги</a>
-    <a href="#delivery" class="button">✉️ Доставка</a>
-    <a href="#websites" class="button">💻 Сайты</a>
-    
-    <!-- Форма заказа -->
-    <div style="margin-top: 30px;">
-        <iframe 
-            src="https://forms.office.com/r/Cm69ktKvJA" 
-            width="600" 
-            height="400" 
-            frameborder="0"
-            style="border: none;">
-        </iframe>
+    <!-- Основной контент -->
+    <div class="container">
+        <h2>Miei servizi</h2>
+        
+        <div class="services">
+            <div class="service-card">
+                <h3>📚 Libri</h3>
+                <p>Cartacei e audiolibri</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>✉️ Posta</h3>
+                <p>Lettere e pacchi</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>💻 Web</h3>
+                <p>Programmazione su NodeJ, HTML ecc.</p>
+            </div>
+        </div>
+        
+        <!-- Кнопка заказа -->
+        <a href="https://forms.office.com/ваша_ссылка" class="btn primary-btn">
+            🛒 Ordinare
+        </a>
     </div>
+    
+    <!-- Подвал -->
+    <footer>
+        <p>© 2025 Vlad Inc. | Giardini Naxos, Italia</p>
+        <p>WhatsApp: +39 350 187 86 93</p>
+        <p>E-Mail: vlad.balesnyy@gmail.com</p>
+    </footer>
 </body>
 </html>
